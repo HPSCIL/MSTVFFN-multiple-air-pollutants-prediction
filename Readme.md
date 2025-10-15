@@ -54,6 +54,5 @@ Model hyperparameters:<br>
 
 
 ## Citation
-To Cite MSTVFFN in Publications<br>
-- A paper describing MSTVFFN will be submitted to a scientific journal for publication soon<br>
-- For now, you may just cite the URL of the source codes of MSTVFFN (https://github.com/HPSCIL/MSTVFFN-multiple-air-pollutants-prediction) in your publications</font>
+- If you find our work useful in your research, please cite:<br>
+X. Zhou, X. Liang, Q. Zhu, J. Gu, Q. Guan, A multiscale spatial–temporal-variable feature fusion network for predicting multiple air pollutants, Environment International (2025), doi: https://doi.org/10.1016/j.envint.2025.109864
