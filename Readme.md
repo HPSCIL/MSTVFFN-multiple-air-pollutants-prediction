@@ -20,6 +20,12 @@ MSTVFFN uses the following dependencies
 - Numpy and Pandas
 - CUDA 11.8 or latest version
 
+## Dataset
+- Beijing dataset: The Beijing multi-site air quality dataset is obtained from Beijing-Multi-Site-Air-Quality-Data-Data-Set (https://github.com/Afkerian/Beijing-Multi-Site-Air-Quality-Data-Data-Set/tree/main)<br>
+- London dataset: The London air quality dataset is obtained from KDD2018_FreshAir (https://github.com/B04902039/KDD2018_FreshAir)<br>
+The processed sample data provided in this repository are located in the [click here](./MSTVFFN/Data).<br>
+The Data provided in this repository are sample data, intended only to demonstrate the code workflow and data format specifications. The sample data are not sufficient for model training. For full experiments, please obtain the complete dataset following the instructions in the related paper or documentation, or prepare your own data in the same format.
+
 ## Folder Structure
 We list the code of the major modules as follows:<br>
 - The main function to train/test our model: [click here](./MSTVFFN/MODEL/main.py)<br>
