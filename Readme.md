@@ -61,4 +61,4 @@ Model hyperparameters:<br>
 
 ## Citation
 - If you find our work useful in your research, please cite:<br>
-X. Zhou, X. Liang, Q. Zhu, J. Gu, Q. Guan, A multiscale spatial–temporal-variable feature fusion network for predicting multiple air pollutants, Environment International (2025), doi: https://doi.org/10.1016/j.envint.2025.109864
+X. Zhou, X. Liang, Q. Zhu, J. Gu, Q. Guan, A multiscale spatial–temporal-variable feature fusion network for predicting multiple air pollutants, Environment International (2025). https://doi.org/10.1016/j.envint.2025.109864
