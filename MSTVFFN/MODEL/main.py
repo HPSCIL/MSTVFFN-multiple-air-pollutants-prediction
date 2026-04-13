@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import torch.optim as optim
 from data_preprocess import pro_data,MyDataset
-from torch.utils.data import random_split
+from torch.utils.data import Subset
 from utils import get_logger,All_Metrics,scaled_Laplacian,cheb_polynomial,init_seed
 from model import MSTSFF
 
@@ -63,8 +63,14 @@ train_size = int(len(dataset) * train_ratio)
 val_size = int(len(dataset) * val_ration)
 test_size = len(dataset) - train_size - val_size
 
-# Randomly disrupted samples and scaled datasets
-train_dataset,val_dataset, test_dataset = random_split(dataset, [train_size,val_size,test_size])
+train_start = 0
+train_end = train_size
+val_end = train_size + val_size
+test_end = len(dataset)  
+
+train_dataset = Subset(dataset, range(train_start, train_end))
+val_dataset = Subset(dataset, range(train_end, val_end))
+test_dataset = Subset(dataset, range(val_end, test_end))
 
 # Create DataLoader
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=32, shuffle=True)
